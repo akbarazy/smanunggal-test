@@ -1,5 +1,174 @@
 .title-header {
   padding: 10px 0 !important;
+  display: inline-block;
   font-size: 28px;
   line-height: 28px;
+  color: #16507b !important;
+  transition: 0.3s;
+}
+
+.title-header:hover {
+  color: #1976d2 !important;
+}
+
+.navbar {
+  box-shadow: 0 5px 12px grey;
+}
+
+.icon {
+  width: 24px;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.navbar-links {
+  width: 125px;
+  height: 65px !important;
+  transition: 0.3s;
+  padding-top: 16px !important;
+}
+
+.navbar-links:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.fa-size-2,
+.fa-size-3,
+.fa-size-4 {
+  font-size: 30px;
+}
+
+.fa-size-1 {
+  font-size: 32px;
+}
+
+.navbar-me {
+  padding-top: 14px !important;
+}
+
+.icon {
+  width: 28px;
+}
+
+.nav-hover {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin: auto;
+  width: 108px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.nav-text {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .navbar-links {
+    padding-top: 8px !important;
+  }
+
+  .fa-size-2,
+  .fa-size-3,
+  .fa-size-4 {
+    font-size: 24px;
+  }
+
+  .fa-size-1 {
+    font-size: 26px;
+  }
+
+  .navbar-me {
+    padding-top: 8px !important;
+  }
+
+  .icon {
+    width: 24px;
+  }
+
+  .nav-text {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .navbar-links {
+    width: 100px;
+  }
+
+  .nav-text {
+    font-size: 14px !important;
+    line-height: 12px;
+  }
+
+  .icon {
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-links {
+    width: 70px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .nav-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 25px;
+  }
+
+  .icon {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar-links {
+    width: 50px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .nav-text {
+    font-size: 10px !important;
+  }
+
+  .navbar-home {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .fa-size-2,
+  .fa-size-3,
+  .fa-size-4 {
+    font-size: 20px;
+  }
+
+  .navbar-me {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .navbar-me .nav-text {
+    line-height: 26px;
+  }
+
+  .icon {
+    width: 21px;
+  }
+
+  .fa-size-1 {
+    font-size: 22.5px;
+  }
 }
